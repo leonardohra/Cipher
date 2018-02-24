@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//cipher/ascii_cipher.py=utf-8
+encoding//cipher/base64_cipher.py=utf-8
+encoding//cipher/cipher.py=utf-8
+encoding//cipher/numeral_system.py=utf-8
+encoding//cipher/shift_cipher.py=utf-8
+encoding//cipher/util.py=utf-8
+encoding//cipher/vigenere_cipher.py=utf-8
+encoding/main.py=utf-8
