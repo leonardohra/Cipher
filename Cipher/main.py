@@ -118,7 +118,7 @@ shift_dec_all = cipher.decrypt_shift(shift_enc)
 print(shift_dec_all)
 
 '''
-    Vigenere shift: You'll need the a key and the text
+    Vigenere shift: You'll need a key and the text
 '''
 
 key = 'Red John'
