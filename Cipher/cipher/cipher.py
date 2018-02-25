@@ -46,7 +46,7 @@ class Cipher():
             
         '''
                 
-        return self.a_c.decrypt(text, mode, digits)
+        return self.a_c.decrypt(encrypted, mode, digits)
 
     def encrypt_base64(self, text):
         '''

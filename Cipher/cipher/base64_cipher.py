@@ -118,15 +118,9 @@ class Base64_Cipher():
         # Convert to decimal, if not thrash (last elements from the conversion added to form the '=')
         groups_ascii_dec = [convert_to_dec(element, NumeralSystem.BINARY.value) for element in groups_ascii_bin if(len(element) == 8)]
         # Transform to letters by ASCII table
-        letters = [chr(int(digit)) for digit in decimal] 
+        letters = [chr(int(digit)) for digit in groups_ascii_dec] 
         # Join everything
         result = ''.join(letters) 
-        
-        # Reverse test
-        if(coding_base64(result) == text):
-            print('Reverse text succeded')
-        else:
-            print('Reverse test didn\'t work')
         
         return result
     

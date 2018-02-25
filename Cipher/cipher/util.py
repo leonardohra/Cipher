@@ -49,7 +49,7 @@ def convert_to_dec(number, base):
     base16.update( { str(number): str(number) for number in range(10) } ) 
     # Adding A-F: For each number (number) in range 10-15 and letter (letter) in range 65-70 (A-F in ASCII), 
     # Create a dictionary with the letter as key and number as value. Add this dictionary to the previous dictionary
-    base16.update( { str(letter): chr(number) for number, letter in zip( range(10, 16), range(65, 71) ) } ) 
+    base16.update( { chr(letter): str(number) for number, letter in zip( range(10, 16), range(65, 71) ) } ) 
     
     digits = []
     result = 0 
@@ -82,7 +82,7 @@ def convert_from_dec(number_str, base, digits):
     
     # If number comes in base 10, no need to convert
     if(base == 10):
-        return number_str
+        return number_str.zfill(digits)
     
     # This dictionary will be like {'0': '0' (...) '10': 'A' (...) '15': 'F'}
     base16 = dict()

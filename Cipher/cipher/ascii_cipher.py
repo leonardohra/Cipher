@@ -51,8 +51,8 @@ class Ascii_Cipher():
         '''
     
         # If trying to decrypt a character, this work-around is needed
-        if(not isinstance(text, list)):
-            text = [text]
+        #if(not isinstance(encrypted, list)):
+            #encrypted = [encrypted]
         
         #Let's divide all the encrypted string in bunches of numbers in their system
         divided = split_by_index_number(encrypted, digits)
